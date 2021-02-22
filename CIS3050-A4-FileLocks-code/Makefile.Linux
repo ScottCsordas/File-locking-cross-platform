@@ -1,0 +1,14 @@
+EXE	= lockRanger
+OBJS = \
+	lockRanger.o
+
+CC		= gcc
+CFLAGS	= -g
+
+
+$(EXE) : $(OBJS)
+	$(CC) $(CFLAGS) -o $(EXE) $(OBJS)
+
+clean :
+	- rm -f $(EXE)
+	- rm -f $(OBJS)
